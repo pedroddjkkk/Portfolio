@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous"/>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -6,7 +13,7 @@
         <div>
             <a href="#welcome-section" class="nav-elements">About</a>
             <a href="#project-title" class="nav-elements">Work</a>
-            <a href="https://github.com/pedroddjkkk" class="nav-elements" id="profile-link" target="_blank">Github</a>
+            <a href="#contact-section" class="nav-elements" id="profile-link">Contact</a>
         </div>
     </nav>
     <section id="welcome-section">
@@ -16,18 +23,38 @@
     <section id="projects">
         <h1 id="project-title">These are some of my projects</h1>
         <div id="project">
-            <div class="project">            
-                <img src="https://cdn.discordapp.com/attachments/709849847242424320/955523835711602688/unknown.png" alt="Project" class="project-img">
+            <div class="project hidden" id="grid-item1">            
+                <img src="static/img/tsla.png" alt="Project" class="project-img">
                 <a href="https://pedroddjkkk.github.io/TributePage/" class="project-tile">Tribute Page</a>          
             </div>
-            <div class="project">            
-                <img src="https://cdn.discordapp.com/attachments/709849847242424320/955523880448036905/unknown.png" alt="Project" class="project-img">
+            <div class="project hidden" id="grid-item2">            
+                <img src="static/img/survey.png" alt="Project" class="project-img">
                 <a href="https://pedroddjkkk.github.io/SurveyForm/" class="project-tile">Survey Form</a>          
             </div>
-            <div class="project">            
-                <img src="https://cdn.discordapp.com/attachments/709849847242424320/955524008739242064/unknown.png" alt="Project" class="project-img">
+            <div class="project hidden" id="grid-item3">            
+                <img src="static/img/prduct.png" alt="Project" class="project-img">
                 <a href="https://pedroddjkkk.github.io/ProductPage/" class="project-tile">Product Page</a>          
+            </div>
+            <div class="project hidden" id="grid-item4">            
+                <img src="static/img/calculator.png" alt="Project" class="project-img">
+                <a href="https://pedroddjkkk.github.io/CalculadoraReact/" class="project-tile">React Calculator</a>          
             </div>
         </div>
     </section>
+    <section id="contact-section">
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/pedroddjkkk" target="_blank" class="contact-details" >
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://twitter.com/pedroddjkk" target="_blank" class="contact-details">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="malito: pedroddjkk@gmail.com" class="contact-details">
+                <i class="fas fa-at"></i> Send a mail
+            </a>
+            <a href="tel:+55-44-997506602" class="contact-details">
+                <i class="fas fa-mobile-alt"></i> Call me
+            </a>
+        </div>
+      </section>
 </body>

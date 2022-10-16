@@ -8,19 +8,19 @@ body{
 #welcome-section{
     text-align: center;
     display: flex;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    background-image: linear-gradient(62deg, #38201E 0%, #4F2F27 100%);
+    background-image: linear-gradient(62deg, #16161a 0%, #363636 100%);
 }
 #welcome-p{
     color: #FF8364;
 }
 #projects{
-    background-color: #452235;
+    background-image: linear-gradient(360deg, #242427 0%, #616060 100%);
     width: 100%;
-    height: 100vh;
+    height: 140vh;
     text-align: center;
 }
 #project-title{
@@ -30,21 +30,35 @@ body{
     justify-content: center;
 }
 #project{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 43vh 43vh 43vh;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 80px;
     justify-content: center;
+    justify-items: center;
 }
+
+#grid-item4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
 .project{
-    padding: 0 3vw 0 3vw;
     display: flex;
     flex-direction: column;
 }
 .project-tile{
     color: #F1F1F1;
     text-decoration: none;
-    background-color: #453127;
+    background-color: #504946;
     padding: 3vh 0 3vh 0;
 }
+.project-tile:hover{
+    background-color: #444342;
+    color: #ec830a;
+    transition: 0.8s;
+}
+
 .project-img{
     height: 24vh;   
 }
@@ -53,8 +67,10 @@ body{
     position: fixed;
     flex-direction: row-reverse;
     width: 100%;
-    background-color: #38201E;
-    padding: 5vh 500px 5vh 0;
+    background-image: linear-gradient(62deg, #16161a 0%, #363636 100%);
+    padding: 3vh 500px 3vh 0;
+    font-size: 1.2em;
+    z-index: 2;
 }
 .nav-elements{
     padding-right: 30px;
@@ -64,4 +80,35 @@ body{
     html {
       font-size: 55%;
     }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#contact-section{
+    background-color: #242427;
+    width: 100%;
+    height: 16vh;
+    text-align: center;
+}
+
+.contact-details{
+    text-decoration: none;
+    padding: 30px;
+    color: #F1F1F1;
+}
+
+.contact-details:hover {
+    transition: 0.8s;
+    color: #fffbfb;
 }
