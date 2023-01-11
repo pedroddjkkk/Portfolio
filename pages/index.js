@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,110 +14,107 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+      <div className="App">
+        <nav id="navbar">
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+            <a href="#welcome-section" class="nav-elements">
+              About
+            </a>
+            <a href="#project-title" class="nav-elements">
+              Work
+            </a>
+            <a href="#contact-section" class="nav-elements" id="profile-link">
+              Contact
             </a>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+        </nav>
+        <section id="welcome-section">
+          <h1>Hello i'm Pedro</h1>
+          <p id="welcome-p">A student who like web development</p>
+        </section>
+        <section id="projects">
+          <h1 id="project-title">These are some of my projects</h1>
+          <div id="project">
+            <div class="project hidden" id="grid-item1">
+              <img
+                src="static/img/tsla.png"
+                alt="Project"
+                class="project-img"
+              />
+              <a
+                href="https://pedroddjkkk.github.io/TributePage/"
+                class="project-tile"
+              >
+                Tribute Page
+              </a>
+            </div>
+            <div class="project hidden" id="grid-item2">
+              <img
+                src="static/img/survey.png"
+                alt="Project"
+                class="project-img"
+              />
+              <a
+                href="https://pedroddjkkk.github.io/SurveyForm/"
+                class="project-tile"
+              >
+                Survey Form
+              </a>
+            </div>
+            <div class="project hidden" id="grid-item3">
+              <img
+                src="static/img/prduct.png"
+                alt="Project"
+                class="project-img"
+              />
+              <a
+                href="https://pedroddjkkk.github.io/ProductPage/"
+                class="project-tile"
+              >
+                Product Page
+              </a>
+            </div>
+            <div class="project hidden" id="grid-item4">
+              <img
+                src="static/img/calculator.png"
+                alt="Project"
+                class="project-img"
+              />
+              <a
+                href="https://pedroddjkkk.github.io/CalculadoraReact/"
+                class="project-tile"
+              >
+                React Calculator
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        </section>
+        <section id="contact-section">
+          <div class="contact-links">
+            <a
+              id="profile-link"
+              href="https://github.com/pedroddjkkk"
+              target="_blank"
+              class="contact-details"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://twitter.com/pedroddjkk"
+              target="_blank"
+              class="contact-details"
+            >
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="malito: pedroddjkk@gmail.com" class="contact-details">
+              <i class="fas fa-at"></i> Send a mail
+            </a>
+            <a href="tel:+55-44-997506602" class="contact-details">
+              <i class="fas fa-mobile-alt"></i> Call me
+            </a>
+          </div>
+        </section>
+      </div>
     </>
-  )
+  );
 }
