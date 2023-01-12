@@ -97,27 +97,27 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="contact-section">
-          <div className="contact-links">
+        <section id={styles.contactSection}>
+          <div className={styles.contactLinks}>
             <a
-              id="profile-link"
+              id={styles.profileLink}
               href="https://github.com/pedroddjkkk"
               target="_blank"
-              className="contact-details"
+              className={styles.contactDetails}
             >
               <i className="fab fa-github"></i> GitHub
             </a>
             <a
               href="https://twitter.com/pedroddjkk"
               target="_blank"
-              className="contact-details"
+              className={styles.contactDetails}
             >
               <i className="fab fa-twitter"></i> Twitter
             </a>
-            <a href="malito: pedroddjkk@gmail.com" className="contact-details">
+            <a href="malito: pedroddjkk@gmail.com" className={styles.contactDetails}>
               <i className="fas fa-at"></i> Send a mail
             </a>
-            <a href="tel:+55-44-997506602" className="contact-details">
+            <a href="tel:+55-44-997506602" className={styles.contactDetails}>
               <i className="fas fa-mobile-alt"></i> Call me
             </a>
           </div>
