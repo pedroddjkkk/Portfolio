@@ -15,74 +15,82 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="App">
-        <nav id="navbar">
+        <nav id={styles.navbar}>
           <div>
-            <a href="#welcome-section" class="nav-elements">
+            <a href="#welcome-section" className={styles.navElements}>
               About
             </a>
-            <a href="#project-title" class="nav-elements">
+            <a href="#project-title" className={styles.navElements}>
               Work
             </a>
-            <a href="#contact-section" class="nav-elements" id="profile-link">
+            <a href="#contact-section" className={styles.navElements} id="profile-link">
               Contact
             </a>
           </div>
         </nav>
-        <section id="welcome-section">
+        <section id={styles.welcomeSection}>
           <h1>Hello i'm Pedro</h1>
-          <p id="welcome-p">A student who like web development</p>
+          <p id={styles.welcomeP}>A student who like web development</p>
         </section>
-        <section id="projects">
-          <h1 id="project-title">These are some of my projects</h1>
-          <div id="project">
-            <div class="project hidden" id="grid-item1">
-              <img
-                src="static/img/tsla.png"
+        <section id={styles.projects}>
+          <h1 id={styles.projectTitle}>These are some of my projects</h1>
+          <div id={styles.project}>
+            <div className={`${styles.project} ${styles.hidden}`} id={styles.gridItem1}>
+              <Image
+                src="/img/tsla.png"
                 alt="Project"
-                class="project-img"
+                width={300}
+                height={400}
+                className={styles.projectImg}
               />
               <a
                 href="https://pedroddjkkk.github.io/TributePage/"
-                class="project-tile"
+                className={styles.projectTile}
               >
                 Tribute Page
               </a>
             </div>
-            <div class="project hidden" id="grid-item2">
-              <img
-                src="static/img/survey.png"
+            <div className={`${styles.project} ${styles.hidden}`} id={styles.gridItem2}>
+              <Image
+                src="/img/survey.png"
                 alt="Project"
-                class="project-img"
+                width={300}
+                height={400}
+                className={styles.projectImg}
               />
               <a
                 href="https://pedroddjkkk.github.io/SurveyForm/"
-                class="project-tile"
+                className={styles.projectTile}
               >
                 Survey Form
               </a>
             </div>
-            <div class="project hidden" id="grid-item3">
-              <img
-                src="static/img/prduct.png"
+            <div className={`${styles.project} ${styles.hidden}`} id={styles.gridItem3}>
+              <Image
+                src="/img/prduct.png"
                 alt="Project"
-                class="project-img"
+                width={300}
+                height={400}
+                className={styles.projectImg}
               />
               <a
                 href="https://pedroddjkkk.github.io/ProductPage/"
-                class="project-tile"
+                className={styles.projectTile}
               >
                 Product Page
               </a>
             </div>
-            <div class="project hidden" id="grid-item4">
-              <img
-                src="static/img/calculator.png"
+            <div className={`${styles.project} ${styles.hidden}`} id={styles.gridItem4}>
+              <Image
+                src="/img/calculator.png"
                 alt="Project"
-                class="project-img"
+                width={300}
+                height={400}
+                className={styles.projectImg}
               />
               <a
                 href="https://pedroddjkkk.github.io/CalculadoraReact/"
-                class="project-tile"
+                className={styles.projectTile}
               >
                 React Calculator
               </a>
@@ -90,27 +98,27 @@ export default function Home() {
           </div>
         </section>
         <section id="contact-section">
-          <div class="contact-links">
+          <div className="contact-links">
             <a
               id="profile-link"
               href="https://github.com/pedroddjkkk"
               target="_blank"
-              class="contact-details"
+              className="contact-details"
             >
-              <i class="fab fa-github"></i> GitHub
+              <i className="fab fa-github"></i> GitHub
             </a>
             <a
               href="https://twitter.com/pedroddjkk"
               target="_blank"
-              class="contact-details"
+              className="contact-details"
             >
-              <i class="fab fa-twitter"></i> Twitter
+              <i className="fab fa-twitter"></i> Twitter
             </a>
-            <a href="malito: pedroddjkk@gmail.com" class="contact-details">
-              <i class="fas fa-at"></i> Send a mail
+            <a href="malito: pedroddjkk@gmail.com" className="contact-details">
+              <i className="fas fa-at"></i> Send a mail
             </a>
-            <a href="tel:+55-44-997506602" class="contact-details">
-              <i class="fas fa-mobile-alt"></i> Call me
+            <a href="tel:+55-44-997506602" className="contact-details">
+              <i className="fas fa-mobile-alt"></i> Call me
             </a>
           </div>
         </section>
