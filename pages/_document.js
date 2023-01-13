@@ -9,6 +9,7 @@ export default function Document() {
           href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           crossOrigin="anonymous"
         />
+       <link rel="icon" type="image/x-icon" href="/img/icone.svg" />
       </Head>
       <body>
         <Main />
