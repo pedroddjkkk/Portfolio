@@ -44,7 +44,8 @@
     color: #F1F1F1;
     text-decoration: none;
     background-color: #504946;
-    padding: 3vh 0 3vh 0;
+    width: 100%;
+    padding: 5% 0 5% 0;
 }
 .projectTile:hover{
     background-color: #444342;
@@ -53,7 +54,8 @@
 }
 
 .projectImg{
-    height: 24vh;   
+    height: 24vh;
+    width: 100%;   
 }
 #navbar{
     display: flex;
