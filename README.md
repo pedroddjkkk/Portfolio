@@ -10,6 +10,9 @@ Este projeto é um portfolio desenvolvido utilizando o framework [Next.js](https
 - [React](https://reactjs.org/) - Biblioteca JavaScript para criação de interfaces de usuário;
 - [Server-Side Rendering](https://en.wikipedia.org/wiki/Server-side_rendering) - Técnica de renderização em que a lógica de renderização é executada no lado do servidor, gerando o HTML já processado para o cliente.
 
+## Design Responsivo
+Este projeto foi construído com design responsivo em mente, utilizando CSS e técnicas de flexbox e grid layout para garantir uma boa visualização em dispositivos diferentes, desde celulares até desktops. Foram implementadas media queries para adaptar o layout a diferentes resoluções e tamanhos de tela, garantindo uma boa experiência de usuário em todos os dispositivos.
+
 ## Como usar
 
 Para executar o projeto, é necessário ter o [Node.js](https://nodejs.org/en/) instalado.
