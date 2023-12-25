@@ -1,7 +1,10 @@
-export function Corner(){
+interface CornerProps {
+  width: number;
+  height: number;
+}
+
+export function Corner({ width, height }: CornerProps) {
   return (
-    <div>
-      Corner
-    </div>
+    <div className={`w-[${width}px] h-[${height}px] from-green-500 to-blue-400 bg-gradient-to-br`} />
   )
 }
