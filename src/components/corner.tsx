@@ -1,10 +1,15 @@
+import { cn } from "@/lib/cn";
+
 interface CornerProps {
-  width: number;
-  height: number;
+  size: number;
+  padding?: number;
 }
 
-export function Corner({ width, height }: CornerProps) {
+export function Corner({ size, padding = 20 }: CornerProps) {
   return (
-    <div className={`w-[${width}px] h-[${height}px] from-green-500 to-blue-400 bg-gradient-to-br`} />
+    <>
+      <div className={`from-green-500 to-blue-400 bg-gradient-to-br rounded-r-full`} style={{ width: size, height: padding }} />
+      <div className={`from-green-500 to-blue-400 bg-gradient-to-br rounded-b-full`} style={{ height: size, width: padding }} />
+    </>
   )
 }
