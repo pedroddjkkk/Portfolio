@@ -1,4 +1,5 @@
 import { Corner } from '@/components/corner'
+import { Project } from '@/components/project'
 
 export default function Home() {
   return (
@@ -16,8 +17,14 @@ export default function Home() {
               Dentre as aplicações que desenvolvi, destaco o ecommerce de uma grande empresa de cosmeticos.
             </span>
           </section>
-          <section>
-            <h1 className='text-white text-2xl font-thin '>Projetos</h1>
+          <section className='ml-20 mt-6'>
+            <h1 className='text-white text-3xl font-extralight mb-4'>Projetos</h1>
+            <Corner size={60} padding={4} className='m-6 flex flex-col gap-4'>
+              <Project href='https://www.npmjs.com/package/ormize'>ormize</Project>
+              <Project href='https://github.com/pedroddjkkk/ProjetoFazenda'>fazenda</Project>
+              <Project href='https://github.com/pedroddjkkk/InhaLock'>inha lock</Project>
+              <Project href='https://github.com/pedroddjkkk/CalculadoraReact'>calculadora</Project>
+            </Corner>
           </section>
         </Corner>
       </div>
