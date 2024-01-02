@@ -1,16 +1,29 @@
 import { Corner } from '@/components/corner'
 import { Project } from '@/components/project'
 import Image from 'next/image'
+import Link from 'next/link'
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Home() {
   return (
     <main className="bg-[#191919] h-screen w-screen">
       <div className='w-[90%] m-auto'>
         <Corner size={250} padding={18} twoCorners className='flex flex-col'>
-          <div>
-            <Image src={"/logo_pv_4_gray_2.png"} alt='logo' width={200} height={200}></Image>
+          <div className='p-8 w-full flex justify-between items-center'>
+            <Image src={"/logo_pv_4_gray_2.png"} alt='logo' width={150} height={200}></Image>
+            <div className='flex gap-4'>
+              <Link href={"mailto:contato@pedrovalerio.com"}>
+                <MdOutlineEmail className="text-gray-400 hover:text-gray-300 transition-colors duration-300" size={36} />
+              </Link>
+              <Link href={"mailto:contato@pedrovalerio.com"}>
+                <MdOutlineEmail className="text-gray-400 hover:text-gray-300 transition-colors duration-300" size={36} />
+              </Link>
+              <Link href={"mailto:contato@pedrovalerio.com"}>
+                <MdOutlineEmail className="text-gray-400 hover:text-gray-300 transition-colors duration-300" size={36} />
+              </Link>
+            </div>
           </div>
-          <div className='flex mt-8 p-8'>
+          <div className='flex p-8 pt-4'>
             <section className='flex flex-col pl-12 w-[60%]'>
               <h1 className='text-white text-8xl font-thin'>Bem Vindo</h1>
               <span className='text-white font-thin text-lg pl-3 mt-6'>
