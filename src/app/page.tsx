@@ -8,9 +8,9 @@ import { FaGithub, FaNpm } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="bg-[#191919] h-screen w-screen flex justify-center">
-      <div className='w-[90%] mt-32'>
-        <Corner size={250} padding={18} twoCorners className='flex flex-col'>
-          <div className='p-8 w-full flex justify-between items-center bg-[#17191a]'>
+      <div className='w-[90%] mt-32 max-w-[1530px]'>
+        <Corner size={250} padding={18} twoCorners className='flex flex-col bg-[#17191a]'>
+          <div className='p-8 w-full flex justify-between items-center'>
             <Image src={"/logo_pv_4_gray_2.png"} alt='logo' width={150} height={200}></Image>
             <div className='flex gap-6'>
               <Link href={"mailto:contato@pedrovalerio.com"} target='_blank'>
