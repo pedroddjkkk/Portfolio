@@ -10,7 +10,7 @@ export default function Home() {
     <main className="bg-[#191919] h-fit md:pb-0 min-h-screen pb-10 flex justify-center pr-[18px]">
       <div className='w-[90%] md:mt-32 mt-8 max-w-[1530px]'>
         <Corner size={250} padding={18} twoCorners className='flex flex-col bg-[#17191a]'>
-          <div className='md:p-8 pt-2 w-full flex justify-between items-center'>
+          <div className='md:p-8 pt-4 w-full flex justify-between items-center'>
             <Image src={"/logo_pv_4_gray_2.png"} alt='logo' width={50} height={50} className='ml-4'/>
             <div className='flex gap-6'>
               <Link href={"mailto:contato@pedrovalerio.com"} target='_blank'>
@@ -36,9 +36,9 @@ export default function Home() {
                 Dentre as aplicações que desenvolvi, destaco o ecommerce de uma grande empresa de cosmeticos.
               </span>
             </section>
-            <section className='md:ml-20 mt-6 md:mb-0 mb-6'>
+            <section className='md:ml-20 sm:mt-6 mt-10 md:mb-0 mb-12'>
               <h1 className='text-white text-3xl font-extralight mb-4'>Projetos</h1>
-              <Corner size={60} padding={4} className='m-6 flex flex-col gap-4'>
+              <Corner size={60} padding={4} className='sm:m-6 ml-4 mt-3 flex flex-col gap-4'>
                 <Project href='https://www.npmjs.com/package/ormize'>ormize</Project>
                 <Project href='https://github.com/pedroddjkkk/ProjetoFazenda'>fazenda</Project>
                 <Project href='https://github.com/pedroddjkkk/InhaLock'>inha lock</Project>
