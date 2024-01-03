@@ -7,7 +7,7 @@ import { FaGithub, FaNpm } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="bg-[#191919] h-fit md:py-0 min-h-screen py-10 flex justify-center pr-[18px]">
+    <main className="bg-[#191919] h-fit md:pb-0 min-h-screen pb-10 flex justify-center pr-[18px]">
       <div className='w-[90%] md:mt-32 mt-8 max-w-[1530px]'>
         <Corner size={250} padding={18} twoCorners className='flex flex-col bg-[#17191a]'>
           <div className='md:p-8 pt-2 w-full flex justify-between items-center'>
