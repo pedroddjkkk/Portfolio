@@ -42,7 +42,7 @@ export default function Home() {
                 <Project href='https://www.npmjs.com/package/ormize'>ormize</Project>
                 <Project href='https://github.com/pedroddjkkk/ProjetoFazenda'>fazenda</Project>
                 <Project href='https://github.com/pedroddjkkk/InhaLock'>inha lock</Project>
-                <Project href=''>inhax</Project>
+                <Project href='https://github.com/pedroddjkkk/Inhax'>inhax</Project>
                 <Project href='https://github.com/pedroddjkkk/CalculadoraReact'>calculadora</Project>
               </Corner>
             </section>
