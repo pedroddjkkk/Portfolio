@@ -31,9 +31,9 @@ export default function Home() {
                 Meu nome é Pedro Valério. Sou desenvolvedor full-stack, apaixonado por tecnologia e por resolver problemas.
               </span>
               <span className='text-white font-thin text-lg pl-3 mt-6 text-center md:text-start'>
-                Tenho experiencia proficional como egenheiro de software full-stack na Ápice Sistemas.
+                Tenho experiencia profissional como engenheiro de software full-stack na Ápice Sistemas.
                 Já desenvolvi muitas aplicações web, mobile e desktop.
-                Dentre as aplicações que desenvolvi, destaco o ecommerce de uma grande empresa de cosmeticos.
+                Dentre as aplicações que desenvolvi, destaco o ecommerce de uma grande empresa de cosméticos.
               </span>
             </section>
             <section className='md:ml-20 sm:mt-6 mt-10 md:mb-0 mb-12'>
